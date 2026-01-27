@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nurse | The3rd-Dimension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: rgba(26, 31, 38, 0.85); /* Slightly transparent for particles */
+            --accent-color: #00d4ff; /* Neon Cyan */
+            --accent-glow: rgba(0, 212, 255, 0.4);
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --steam-grad: linear-gradient(135deg, #00d4ff 0%, #005bea 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- PARTICLE BACKGROUND --- */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Behind everything */
+            pointer-events: none;
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 5px var(--accent-glow); }
+            50% { box-shadow: 0 0 20px var(--accent-glow); }
+            100% { box-shadow: 0 0 5px var(--accent-glow); }
+        }
+
+        .animate-enter {
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0; /* Start hidden */
+        }
+        
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+
+        /* --- NAVIGATION --- */
+        nav {
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 14, 20, 0.8);
+            backdrop-filter: blur(10px); /* Glassmorphism */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo { 
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700; 
+            font-size: 1.2rem; 
+            color: var(--text-main); 
+            text-decoration: none; 
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        
+        .logo:hover { color: var(--accent-color); text-shadow: 0 0 10px var(--accent-glow); }
+
+        .nav-link { color: var(--text-dim); text-decoration: none; transition: 0.3s; }
+        .nav-link:hover { color: var(--accent-color); }
+
+        /* --- HERO SECTION --- */
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 20px; }
+
+        .game-header h1 { 
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 20px;
+            margin-bottom: 2rem;
+        }
+
+        /* Interactive Images */
+        .img-container {
+            overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .img-container:hover {
+            border-color: var(--accent-color);
+            transform: scale(1.01);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .main-capsule { width: 100%; display: block; height: auto; }
+
+        .side-info {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(5px);
+        }
+
+        .game-cover { width: 100%; border-radius: 2px; margin-bottom: 15px; }
+
+        /* --- BUTTONS & ACTIONS --- */
+        .buy-box {
+            background: linear-gradient(90deg, rgba(22, 32, 45, 0.9) 0%, rgba(23, 26, 33, 0.9) 100%);
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            margin: 3rem 0;
+            border: 1px solid rgba(255,255,255,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Button Glow Effect */
+        .btn-action {
+            background: var(--steam-grad);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-action:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        /* --- CONTENT BOXES --- */
+        .description-box {
+            background: rgba(255,255,255,0.02);
+            padding: 30px;
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 2rem;
+        }
+
+        h3 { 
+            color: var(--accent-color); 
+            margin-bottom: 1rem; 
+            text-transform: uppercase; 
+            font-size: 1rem; 
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+        }
+
+        footer { text-align: center; padding: 4rem; color: var(--text-dim); font-size: 0.8rem; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero-grid, .specs-grid { grid-template-columns: 1fr; }
+            .buy-box { flex-direction: column; gap: 20px; text-align: center; }
+            .game-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <nav>
+        <a href="index.html" class="logo">THE3RD-DIMENSION</a>
+        <div class="links">
+            <a href="index.html#projects" class="nav-link">← BACK TO BASE</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="game-header animate-enter">
+            <h1>The Nurse</h1>
+        </div>
+
+        <div class="hero-grid animate-enter delay-1">
+            <div class="gallery">
+                <div class="img-container">
+                    <a href="https://youtu.be/e2CA8u0HeGY">
+                    <img src="thenursebanner.jpg" alt="The Nurse Gameplay" class="main-capsule">
+                </a>
+                </div>
+            </div>
+            <div class="side-info">
+                <div>
+                    <img src="NurseLogo.jpg" alt="Cover Art" class="game-cover">
+                    <p style="font-size: 0.85rem; color: var(--text-dim);">
+                        Experience a gripping psychological horror built in UE5. Navigate the corridors of a forgotten hospital where the line between healing and horror blurs.
+                    </p>
+                </div>
+                <div class="metadata" style="font-size: 0.8rem; margin-top: 15px;">
+                    <p>STATUS: <span style="color: var(--accent-color)">Playable Build</span></p>
+                    <p>GENRE: Survival Horror</p>
+                    <p>ENGINE: Unreal Engine 5.6</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="buy-box animate-enter delay-2">
+            <div>
+                <h2 style="font-size: 1.5rem; font-family: 'Orbitron', sans-serif;">Play The Build</h2>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Current Version: v1.0 </p>
+            </div>
+            <a href="#" class="btn-action">DOWNLOAD PROJECT</a>
+        </div>
+
+        <div class="description-box animate-enter delay-3">
+            <h3>Devlog / About</h3>
+            <p>The Nurse is a first-person survival horror game that focuses on environmental storytelling and resource management. This project was developed to showcase game optimization and detailed  environment design</p>
+            <br>
+            <p style="color: var(--text-dim);"><em>Key Technical Features:</em></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>State Machine based Enemy AI (Patrol, Chase, Search)</li>
+                <li>Detailed Environments</li>
+                <li>Extreamly low minimum requirements</li>
+            </ul>
+        </div>
+
+        <div class="specs-grid animate-enter delay-3">
+            <div class="spec-col">
+                <h3>Minimum System Req</h3>
+                <p><strong>OS:</strong> Windows 10 (64 bit)</p>
+                <p><strong>CPU:</strong> Intel i3-3220 / AMD equiv.</p>
+                <p><strong>GPU:</strong> Intel HD Graphics 4000</p>
+                <p><strong>RAM:</strong> 8 GB (4 GB possible, not recommended)</p>
+                <p><strong>Direct X</strong> Version 11</p>
+                <p><strong>Storage:</strong> 1.5 Gb Space</p>
+            </div>
+            <div class="spec-col">
+                <h3>Tech Stack</h3>
+                <p><strong>Core:</strong> Unreal Engine 5.6</p>
+                <p><strong>Code:</strong> UE5 Blueprints</p>
+                <p><strong>Art:</strong> Blender, Photoshop, Canva</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 The3rd-Dimension. Built for the Portfolio.
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let particlesArray;
+
+        // Resize handling
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        });
+
+        // Mouse interaction
+        const mouse = { x: null, y: null, radius: 150 }
+
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+            // Method to draw individual particle
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            // Method to check particle position, check mouse position, move the particle, draw the particle
+            update() {
+                // Check if particle is still within canvas
+                if (this.x > canvas.width || this.x < 0) {
+                    this.directionX = -this.directionX;
+                }
+                if (this.y > canvas.height || this.y < 0) {
+                    this.directionY = -this.directionY;
+                }
+
+                // Check collision detection - mouse position / particle position
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx*dx + dy*dy);
+                
+                if (distance < mouse.radius + this.size){
+                    if (mouse.x < this.x && this.x < canvas.width - this.size * 10) {
+                        this.x += 10;
+                    }
+                    if (mouse.x > this.x && this.x > this.size * 10) {
+                        this.x -= 10;
+                    }
+                    if (mouse.y < this.y && this.y < canvas.height - this.size * 10) {
+                        this.y += 10;
+                    }
+                    if (mouse.y > this.y && this.y > this.size * 10) {
+                        this.y -= 10;
+                    }
+                }
+                
+                // Move particle
+                this.x += this.directionX;
+                this.y += this.directionY;
+                
+                // Draw particle
+                this.draw();
+            }
+        }
+
+        // Create particle array
+        function init() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 9000; // Adjust density here
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 2) + 1;
+                let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+                let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 0.4) - 0.2; // Speed
+                let directionY = (Math.random() * 0.4) - 0.2;
+                let color = '#00d4ff'; // Particle color (Cyan)
+
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        // Animation Loop
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+            connect();
+        }
+
+        // Draw lines between particles
+        function connect() {
+            let opacityValue = 1;
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
+                    + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+                    
+                    if (distance < (canvas.width/7) * (canvas.height/7)) {
+                        opacityValue = 1 - (distance/20000);
+                        ctx.strokeStyle = 'rgba(0, 212, 255,' + opacityValue + ')'; // Line color
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        init();
+        animate();
+    </script>
+</body>
+</html>
