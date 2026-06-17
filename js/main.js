@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const siteNav = document.getElementById('siteNav');
   const accordionItems = document.querySelectorAll('.accordion-item');
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  const revealTargets = document.querySelectorAll('.hero, .counters, .section, .feature-card, .skill-card, .portfolio-card, .recent-card, .achievement-card, .video-card, .accordion-item');
+  const revealTargets = document.querySelectorAll('.hero:not(.no-reveal), .counters:not(.no-reveal), .section:not(.no-reveal), .feature-card:not(.no-reveal), .skill-card:not(.no-reveal), .portfolio-card:not(.no-reveal), .recent-card:not(.no-reveal), .achievement-card:not(.no-reveal), .video-card:not(.no-reveal), .accordion-item:not(.no-reveal)');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (menuToggle && siteNav) {
