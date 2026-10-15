@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "background": "/assets/imgs/works/projects/google-bpf/google-bpf-preview.jpg",
+    "caption": {
+      "subTitle": "Best Phones Forever",
+      "title": "Google",
+      "link": "/project1"
+    }
+  },
+  {
+    "id": 2,
+    "background": "/assets/imgs/works/projects/johnson-controls/jci-preview.jpg",
+    "caption": {
+      "subTitle": "Interactive Projection Book",
+      "title": "Johnson Controls",
+      "link": "/project2"
+    }
+  },
+  {
+    "id": 3,
+    "background": "https://www.datocms-assets.com/32859/1605380681-oxfullsiteshare2.jpg?fit=crop&h=630&w=1200",
+    "caption": {
+      "subTitle": "Spanish Localization & UI",
+      "title": "Ocean X Experience",
+      "link": "/project3"
+    }
+  },
+  {
+    "id": 4,
+    "background": "https://analyticsindiamag.com/wp-content/uploads/2021/08/Data-Science-Hiring-Process-At-MPL--1024x576.jpg",
+    "caption": {
+      "subTitle": "Game Development",
+      "title": "Mobile Premier League",
+      "link": "/project4"
+    }
+  },
+  {
+    "id": 5,
+    "background": "https://storage.googleapis.com/fireflycms-a8db5.appspot.com/uploads/2023/6/1/original-image%2040.png?GoogleAccessId=firebase-adminsdk-8y9gz%40fireflycms-a8db5.iam.gserviceaccount.com&Expires=253402214400&Signature=Tye79vPHxxWjRXEZaw01jTE3TAxwNoF8ZEkcQaV%2Fh74ozgD0QqUftS4tWAJD9MXfsP%2BudcFSWd9vnYZW5McU6hoxtP59g5fsbQkLPoWV%2BvIVQmYrspwCWoEk5r69yVlniwg%2Fm4Y3UQcF2JfNfxsVBW9%2F8cMYp6AO%2BLV6VlBWkKGNyd0mmrDODAcBb1W9VW3TbzBq5m2sIh9jFxh%2Bdzfc9sHaX6WDDyqwrhCohDkfZnkM2yCn%2BLOxSdGK0G3bNYHBW9R3RP4Z7gz6Px7pYa%2BJ%2BHYj5R7sje5tsTt1aC7xF4qpbz%2Bg4z9uSVjQHKjH3o3OEUSmoWDCTgy7k%2FsT2kS34A%3D%3D",
+    "caption": {
+      "subTitle": "3D Environments",
+      "title": "36 Below",
+      "link": "/project1"
+    }
+  },
+  {
+    "id": 6,
+    "background": "/assets/imgs/works/projects/hovertech/solutions-bg.jpg",
+    "caption": {
+      "subTitle": "Web Development",
+      "title": "HoverTech International",
+      "link": "/project2"
+    }
+  },
+  {
+    "id": 7,
+    "background": "/assets/imgs/works/projects/da-vinci-science-center/dvsc-prev.png",
+    "caption": {
+      "subTitle": "Web Development",
+      "title": "Da Vinci Science Center",
+      "link": "/project2"
+    }
+  },
+  {
+    "id": 8,
+    "background": "https://storage.googleapis.com/fireflycms-a8db5.appspot.com/uploads/2023/6/1/original-storm.png?GoogleAccessId=firebase-adminsdk-8y9gz%40fireflycms-a8db5.iam.gserviceaccount.com&Expires=253402214400&Signature=vY2ssMtQzP6UPvb3W1M2NOLyj4SPISgywHkn%2Bn6sUnLaE9rPPKtS51YXzNZPVzEGH7%2F6Abgl53cJQwBfgMuywml8FF%2FTlcJX8J4OqLJ3mGkvc5ZdfMlxAVz8R6bclu9OXDlcTd2tyu8LUVYIfwPYmpADjVyRWll%2FH2S38MywC%2FYyoiDOCI9Lp99XuGz87KJ4NvrdLhWronhX0dqpuBfKc1BtjEd%2FP%2FoVrs5FFCP1o20utMdGjYzUmHmKov%2BLDNFc9eCThWqW4p7SN10qH3mSgTXH2cg16GfTijtaM1IVVnLkllK2teJvBvRFOyVBdWx77cnyxEuaEL5mByfzqhoTlg%3D%3D",
+    "caption": {
+      "subTitle": "Web Development, Photography, Social Media",
+      "title": "Lehigh Carbon Community College",
+      "link": "/project3"
+    }
+  }
+]
