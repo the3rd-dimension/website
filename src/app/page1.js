@@ -12,10 +12,10 @@ import Portfolio from "@/components/Preview/Portfolio";
 import Footer from "@/components/Preview/Footer";
 
 export const metadata = {
-  title: 'Bayone - Preview',
+  title: 'Tamzid Idrish - Landing Preview',
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico",
+    icon: "/assets/imgs/t3d_favicon.png",
+    shortcut: "/assets/imgs/t3d_favicon.png",
     other: generateStylesheetObject([
       '/assets/fonts/mona-sans/style.css',
       '/assets/css/plugins.css',

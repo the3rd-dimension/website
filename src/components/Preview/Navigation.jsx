@@ -6,7 +6,7 @@ function Navigation() {
       <div className="container d-flex align-items-center">
         <div>
           <div className="logo icon-img-100">
-            <a href="#0"><img src="/assets/imgs/logo-light.png" alt="" /></a>
+            <a href="#0"><img src="/assets/imgs/t3d_logo_light.png" alt="" /></a>
           </div>
         </div>
         <a href="https://themeforest.net/user/themescamp/portfolio" className="butn butn-bord butn-cerv ml-auto text-u">

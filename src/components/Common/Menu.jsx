@@ -1,5 +1,7 @@
 "use client";
 import React from 'react';
+import SocialLinks from '@/components/Common/SocialLinks';
+import { contactDetails } from '@/data/contact';
 
 function Menu() {
   function closeMenu() {
@@ -47,32 +49,37 @@ function Menu() {
                     <a href="/work" className="link animsition-link" onClick={closeMenu}><span className="nm">03.</span>Experiences</a>
                   </div>
                 </li>
+                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <div className="o-hidden">
+                    <a href="/blog" className="link animsition-link" onClick={closeMenu}><span className="nm">04.</span>news</a>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-4 valign">
             <div className="cont-info">
               <div className="item mb-50">
-                <h6 className="text-u fw-600 mb-20">Based In</h6>
-                <p className="fw-400 fz-18">United States</p>
+                <h6 className="text-u fw-600 mb-20">Based In: </h6>
+                <p className="fw-400 fz-18">{contactDetails.location}</p>
               </div>
               <div className="item mb-50">
                 <h6 className="text-u fw-600 mb-20">How to Connect</h6>
-                <p className="fw-400 fz-18">hello@soriox.com</p>
+                <p className="fw-400 fz-18">
+                  <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
+                </p>
+                <p className="fw-400 fz-18">
+                  <a href={`tel:${contactDetails.phone}`}>{contactDetails.phone}</a>
+                </p>
               </div>
               <div className="bottom">
-                <h6 className="text-u fw-600 mb-20">Follow Us</h6>
-                <ul className="rest social-text d-flex fz-13">
-                  <li className="mr-20">
-                    <a href="https://www.youtube.com/channel/UCJJ2v-f2pCZAkeo2pLEhkww" className="hover-this"><span className="hover-anim">YouTube</span></a>
-                  </li>
-                  <li className="mr-20">
-                    <a href="https://www.linkedin.com/in/soriox/" className="hover-this"><span className="hover-anim">LinkedIn</span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/soriox.art/" className="hover-this"><span className="hover-anim">Instagram</span></a>
-                  </li>
-                </ul>
+                <h6 className="text-u fw-600 mb-20">Follow Me</h6>
+                <SocialLinks
+                  listClassName="rest social-text d-flex fz-13 flex-wrap"
+                  itemClassName="mr-20"
+                  linkClassName="hover-this"
+                  labelClassName="hover-anim"
+                />
               </div>
             </div>
           </div>

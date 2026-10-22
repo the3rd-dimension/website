@@ -19,10 +19,10 @@ import Contact from "@/components/Landing/Contact";
 import Footer1 from "@/components/Common/Footer1";
 
 export const metadata = {
-  title: 'Bayone - Landing',
+  title: 'Tamzid Idrish - Landing',
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico",
+    icon: "/assets/imgs/t3d_favicon.png",
+    shortcut: "/assets/imgs/t3d_favicon.png",
     other: generateStylesheetObject([
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       '/assets/fonts/mona-sans/style.css',

@@ -1,24 +1,24 @@
 [
   {
     "id": 1,
-    "img": "/assets/imgs/blog/b5.jpg",
+    "img": "/assets/imgs/works/projects/mythilo/mythiloBannerSmall.png",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "14",
+      "month": "October"
     },
-    "category": "Inspiration",
-    "title": "Definitive Guide to Make a Daily More Productive Working Flow.",
-    "link": "/blog-details"
+    "category": "Android APP",
+    "title": "Mythilo platform is coming to Android",
+    "link": "https://mythilo.io"
   },
   {
     "id": 2,
-    "img": "/assets/imgs/blog/b6.jpg",
+    "img": "/assets/imgs/blog/AI_Image.jpg",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "02",
+      "month": "October"
     },
     "category": "Inspiration",
-    "title": "Utilizing mobile technology in the field.",
-    "link": "/blog-details"
+    "title": "Working on new Local AI workflows",
+    "link": "/blog-local-ai"
   }
 ]

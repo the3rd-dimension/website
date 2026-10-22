@@ -1,7 +1,7 @@
 node_modules/
 .next/
 .swc/
-.*.env
+.env*
 out/
 yarn.lock
 package-lock.json

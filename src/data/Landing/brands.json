@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "img": "/assets/imgs/brands/01.png"
+    "img": "/assets/imgs/brands/bkg-logo.png"
   },
   {
     "id": 2,
-    "img": "/assets/imgs/brands/02.png"
+    "img": "/assets/imgs/brands/ruralgames.jpeg"
   },
   {
     "id": 3,
-    "img": "/assets/imgs/brands/03.png"
+    "img": "/assets/imgs/brands/bkg-logo.png"
   },
   {
     "id": 4,
-    "img": "/assets/imgs/brands/04.png"
+    "img": "/assets/imgs/brands/bkg-logo.png"
   },
   {
     "id": 5,
-    "img": "/assets/imgs/brands/05.png"
+    "img": "/assets/imgs/brands/bkg-logo.png"
   }
 ]

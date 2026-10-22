@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from 'react';
+import ContactForm from '@/components/Contact/ContactForm';
 
 function Contact() {
   useEffect(() => {
@@ -35,31 +36,7 @@ function Contact() {
                 <h3 className="text-u f-bold fz-50">Get In <span className="f-ultra-light">Touch</span>.</h3>
               </div>
               <div className="full-width">
-                <form id="contact-form" method="post" action="contact.php">
-                  <div className="messages"></div>
-                  <div className="controls row">
-                    <div className="col-lg-6">
-                      <div className="form-group mb-30">
-                        <input id="form_name" type="text" name="name" placeholder="Name" required="required" />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form-group mb-30">
-                        <input id="form_email" type="email" name="email" placeholder="Email" required="required" />
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="form-group">
-                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
-                      </div>
-                      <div className="mt-30 hover-this cursor-pointer">
-                        <button type="submit" className="hover-anim">
-                          <span className="text">Let's Talk</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>

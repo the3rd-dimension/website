@@ -9,7 +9,7 @@ function Services() {
         <div className="sec-head pb-20 bord-thin-bottom mb-80">
           <div className="d-flex align-items-center">
             <div>
-              <h3 className="f-bold text-u">Our capabilities</h3>
+              <h3 className="f-bold text-u">Capabilities</h3>
             </div>
             <div className="ml-auto">
               <div className="d-flex align-items-center">

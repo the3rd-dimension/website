@@ -14,10 +14,10 @@ import Form from "@/components/Contact/Form";
 import Footer1 from "@/components/Common/Footer1";
 
 export const metadata = {
-  title: 'Bayone - Contact',
+  title: 'Contact | Tamzid Idrish',
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico",
+    icon: "/assets/imgs/t3d_favicon.png",
+    shortcut: "/assets/imgs/t3d_favicon.png",
     other: generateStylesheetObject([
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       '/assets/fonts/mona-sans/style.css',

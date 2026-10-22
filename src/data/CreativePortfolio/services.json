@@ -2,29 +2,29 @@
   {
     "id": 1,
     "numb": "01",
-    "title": "Product Design",
-    "icon": "/assets/imgs/serv-icons/0.png",
-    "content": "We build and activate brands through cultural insight, strategic vision, and the power of emotion across every"
+    "title": "System Design",
+    "icon": "/assets/imgs/serv-icons/UE5.png",
+    "content": "Designing and implementing gameplay systems for games in Unreal Engine 5."
   },
   {
     "id": 2,
     "numb": "02",
-    "title": "Art Direction",
+    "title": "PCG Development",
     "icon": "/assets/imgs/serv-icons/1.png",
-    "content": "We build and activate brands through cultural insight, strategic vision, and the power of emotion across every"
+    "content": "Creating procedural content for production CGI and VFX with Blender and UE5."
   },
   {
     "id": 3,
     "numb": "03",
     "title": "Web Development",
-    "icon": "/assets/imgs/serv-icons/2.png",
-    "content": "We build and activate brands through cultural insight, strategic vision, and the power of emotion across every"
+    "icon": "/assets/imgs/serv-icons/HTMLLogo.png",
+    "content": "Building responsive and interactive websites for portfolios, businesses, and personal projects."
   },
   {
     "id": 4,
     "numb": "04",
-    "title": "Branding Strategy",
-    "icon": "/assets/imgs/serv-icons/0.png",
-    "content": "We build and activate brands through cultural insight, strategic vision, and the power of emotion across every"
+    "title": "Metahuman",
+    "icon": "/assets/imgs/serv-icons/MH_Logo.png",
+    "content": "Custom metahuman workflows for character creation, animation, and integration into Unreal Engine 5 projects."
   }
 ]

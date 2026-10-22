@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect } from 'react';
+import SocialLinks from '@/components/Common/SocialLinks';
+import { contactDetails } from '@/data/contact';
 
 function Footer() {
   useEffect(() => {
@@ -31,35 +33,30 @@ function Footer() {
           <div className="row">
             <div className="col-lg-3">
               <div className="logo">
-                <img src="/assets/imgs/logo-light.png" alt="" />
+                <img src="/assets/imgs/t3d_logo_light.png" alt="" />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="column">
                 <h6 className="sub-title mb-30">Social Media</h6>
-                <ul className="rest">
-                  <li className="hover-this cursor-pointer">
-                    <a href="#0" className="hover-anim">Facebook</a>
-                  </li>
-                  <li className="hover-this cursor-pointer">
-                    <a href="#0" className="hover-anim">twitter</a>
-                  </li>
-                  <li className="hover-this cursor-pointer">
-                    <a href="#0" className="hover-anim">LinkedIn</a>
-                  </li>
-                  <li className="hover-this cursor-pointer">
-                    <a href="#0" className="hover-anim">Behance</a>
-                  </li>
-                </ul>
+                <SocialLinks
+                  listClassName="rest"
+                  itemClassName="cursor-pointer"
+                  linkClassName="hover-this"
+                  labelClassName="hover-anim"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className="column">
-                <h6 className="sub-title mb-30">Our Office : </h6>
-                <p>Besòs 1, 08174 Sant Cugat del Vallès, Barcelona</p>
+                <h6 className="sub-title mb-30">Based In:</h6>
+                <p>{contactDetails.location}</p>
                 <h5 className="mt-15 underline">
-                  <a href="#0">+2 456 34324 45</a>
+                  <a href={`tel:${contactDetails.phone}`}>{contactDetails.phone}</a>
                 </h5>
+                <p className="mt-15">
+                  <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
+                </p>
               </div>
             </div>
           </div>
@@ -85,7 +82,7 @@ function Footer() {
               <div className="copyright d-flex">
                 <div className="ml-auto">
                   <p className="fz-13">
-                    © 2023 Bayone is Proudly Powered by <span className="underline"><a href="https://themeforest.net/user/themescamp" target="_blank">ThemesCamp</a></span>
+                    © 2026 Tamzid Idrish
                   </p>
                 </div>
               </div>

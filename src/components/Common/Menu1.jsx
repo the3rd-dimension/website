@@ -1,5 +1,7 @@
 "use client";
 import React from 'react';
+import SocialLinks from '@/components/Common/SocialLinks';
+import { contactDetails } from '@/data/contact';
 
 function Menu() {
   function closeMenu() {
@@ -160,29 +162,25 @@ function Menu() {
             <div className="cont-info">
               <div className="item mb-50">
                 <h6 className="text-u fw-600 mb-20">Base</h6>
-                <p className="fw-400 fz-18">Besòs 1, 08174 Sant Cugat del Vallès, Barcelona</p>
+                <p className="fw-400 fz-18">{contactDetails.location}</p>
               </div>
               <div className="item mb-50">
                 <h6 className="text-u fw-600 mb-20">How to Connect</h6>
-                <p className="fw-400 fz-18">+2 456 34324 45</p>
-                <p className="fw-400 fz-18">hello@Bayone.com</p>
+                <p className="fw-400 fz-18">
+                  <a href={`tel:${contactDetails.phone}`}>{contactDetails.phone}</a>
+                </p>
+                <p className="fw-400 fz-18">
+                  <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
+                </p>
               </div>
               <div className="bottom">
-                <h6 className="text-u fw-600 mb-20">Follow Us</h6>
-                <ul className="rest social-text d-flex fz-13">
-                  <li className="mr-20">
-                    <a href="/#0" className="hover-this"><span className="hover-anim">Facebook</span></a>
-                  </li>
-                  <li className="mr-20">
-                    <a href="/#0" className="hover-this"><span className="hover-anim">Twitter</span></a>
-                  </li>
-                  <li className="mr-20">
-                    <a href="/#0" className="hover-this"><span className="hover-anim">LinkedIn</span></a>
-                  </li>
-                  <li>
-                    <a href="/#0" className="hover-this"><span className="hover-anim">Instagram</span></a>
-                  </li>
-                </ul>
+                <h6 className="text-u fw-600 mb-20">Follow Me</h6>
+                <SocialLinks
+                  listClassName="rest social-text d-flex fz-13 flex-wrap"
+                  itemClassName="mr-20"
+                  linkClassName="hover-this"
+                  labelClassName="hover-anim"
+                />
               </div>
             </div>
           </div>

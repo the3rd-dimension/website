@@ -11,7 +11,7 @@ function Video() {
             <div className="vid-intro">
               <div className="video-container">
                 <video autoPlay loop muted>
-                  <source src="/assets/vid/vid-startup.mp4" type="video/mp4" />
+                  <source src="/assets/vid/harukiShot1.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>

@@ -19,10 +19,10 @@ import Contact from "@/components/CreativePortfolio/Contact";
 import Footer from "@/components/Common/Footer2";
 
 export const metadata = {
-  title: 'Bayone - Creative Portfolio',
+  title: 'Tamzid Idrish',
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico",
+    icon: "/assets/imgs/t3d_favicon.png",
+    shortcut: "/assets/imgs/t3d_favicon.png",
     other: generateStylesheetObject([
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       '/assets/fonts/mona-sans/style.css',
@@ -48,6 +48,12 @@ export default function CreativePortfolio() {
             <div className="main-box main-bg ontop">
               <Header />
               <About />
+              <Marquee />
+              <Services />
+              <Works />
+              <Testimonials />
+              <Blog />
+              <Contact />
             </div>
           </main>
         </div>

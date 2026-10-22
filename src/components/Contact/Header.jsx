@@ -13,7 +13,13 @@ function Header() {
           </div>
           <div className="col-lg-11">
             <div className="google-map">
-              <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=hollwood&t=&z=11&ie=UTF8&iwloc=&output=embed">
+              <iframe
+                id="gmap_canvas"
+                title="Map of Dhaka, Bangladesh"
+                src="https://maps.google.com/maps?q=Dhaka%2C%20Bangladesh&z=12&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              >
               </iframe>
             </div>
           </div>

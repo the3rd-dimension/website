@@ -34,7 +34,7 @@ function Contact() {
                 <div className="mb-30">
                   <span className="sub-title bord">Work With Us</span>
                 </div>
-                <h2 className="fz-70 f-bold text-u">We would love <span className="d-block f-ultra-light">to hear more about</span> your project
+                <h2 className="fz-70 f-bold text-u">Let us discuss <span className="d-block f-ultra-light">more about</span> your project
                 </h2>
                 <a href="/contact" className="butn-circle animsition-link colorbg mt-30">
                   <span>Get In Touch</span>

@@ -35,8 +35,8 @@ function CommentsForm() {
                   </div>
                   <div className="text-center">
                     <div className="mt-30 hover-this cursor-pointer">
-                      <button type="submit" className="hover-anim">
-                        <span className="text">Post <br /> Comment</span>
+                      <button type="submit">
+                        <span className="text hover-anim">Post <br /> Comment</span>
                       </button>
                     </div>
                   </div>

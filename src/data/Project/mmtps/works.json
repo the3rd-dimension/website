@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/imgs/works/projects/mmtps/mmtps_slide.png"
+  },
+  {
+    "id": 2,
+    "image": "/assets/imgs/works/projects/mmtps/mmtpsMenu.png"
+  },
+  {
+    "id": 3,
+    "image": "/assets/imgs/works/projects/mmtps/mmtpsSlide1.png"
+  },
+  {
+    "id": 4,
+    "image": "/assets/imgs/works/projects/mmtps/mmtpsSlide2.png"
+  },
+  {
+    "id": 5,
+    "image": "/assets/imgs/works/projects/mmtps/mmtps_inventory.png"
+  },
+  {
+    "id": 6,
+    "image": "/assets/imgs/works/projects/mmtps/mmtps_options.png"
+  }
+]

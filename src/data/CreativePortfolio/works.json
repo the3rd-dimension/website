@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "img": "/assets/imgs/works/projects/google-bpf/google-bpf-preview.jpg",
-    "category": "Best Phones Forever",
-    "title": "Google",
-    "link": "/project1"
+    "img": "/assets/imgs/works/projects/mmtps/mmtps3_4.png",
+    "category": "Development Kit",
+    "title": "MMTPS",
+    "link": "/mmtps"
   },
   {
     "id": 2,
-    "img": "/assets/imgs/works/projects/johnson-controls/jci-preview.jpg",
-    "category": "Customer Experience Center",
-    "title": "Johnson Controls",
-    "link": "/project2"
+    "img": "/assets/imgs/works/projects/mythilo/mythiloBannerSmall.png",
+    "category": "Android Application",
+    "title": "Mythilo",
+    "link": "/mythilo"
   },
   {
     "id": 3,
-    "img": "https://www.datocms-assets.com/32859/1605380681-oxfullsiteshare2.jpg?fit=crop&h=630&w=1200",
-    "category": "Localization & UI",
-    "title": "Ocean X Experience",
-    "link": "/project3"
+    "img": "/assets/imgs/works/projects/diabolus/diabolusBanner1.png",
+    "category": "Game Development",
+    "title": "Diabolus",
+    "link": "/diabolus"
   },
   {
     "id": 4,
-    "img": "https://analyticsindiamag.com/wp-content/uploads/2021/08/Data-Science-Hiring-Process-At-MPL--1024x576.jpg",
+    "img": "/assets/imgs/works/projects/zerodrag/zd_dev_announcement.png",
     "category": "Game Development",
-    "title": "Mobile Premier League",
-    "link": "/project4"
+    "title": "Zero Drag",
+    "link": "/zerodrag"
   }
 ]
 

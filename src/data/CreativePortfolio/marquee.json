@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "UI-UX Experience"
+    "title": "Game Development"
   },
   {
     "id": 2,
@@ -9,14 +9,22 @@
   },
   {
     "id": 3,
-    "title": "Digital Marketing"
+    "title": "Metahuman Workflows"
   },
   {
     "id": 4,
-    "title": "Product Design"
+    "title": "Blender"
   },
   {
     "id": 5,
-    "title": "Mobile Solutions"
+    "title": "Unreal Engine 5"
+  },
+  {
+    "id": 6,
+    "title": "CGI"
+  },
+  {
+    "id": 7,
+    "title": "VFX"
   }
 ]

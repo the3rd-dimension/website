@@ -2,12 +2,12 @@
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: 'Bayone',
-  description: 'Bayone - Multi-Purpose React.js Next.js Template',
-  keywords: ['HTML5', 'Template', 'Bayone', 'Multi-Purpose', 'themeforest'],
+  title: 'Tamzid Idrish',
+  description: 'Tamzid Idrish - Portfolio',
+  keywords: ['HTML5', 'Template', 'Tamzid Idrish', 'Portfolio', 'Unreal Engine 5', 'UE5', 'Next.js', 'React', 'Three.js', 'WebGL', 'WebXR', 'A-Frame', 'VR', 'AR', 'Metaverse'],
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico"
+    icon: "/assets/imgs/t3d_favicon.png",
+    shortcut: "/assets/imgs/t3d_favicon.png"
   },
 }
 

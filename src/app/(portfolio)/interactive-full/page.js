@@ -11,10 +11,10 @@ import Menu from "@/components/Common/Menu";
 import InteractiveFull from "@/components/Portfolio/InteractiveFull";
 
 export const metadata = {
-  title: 'Bayone - Portfolio Interactive Full',
+  title: 'Tamzid Idrish - Portfolio Interactive Full',
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico",
+    icon: "/assets/imgs/t3d_favicon.png",
+    shortcut: "/assets/imgs/t3d_favicon.png",
     other: generateStylesheetObject([
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       '/assets/fonts/mona-sans/style.css',

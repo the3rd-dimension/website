@@ -23,15 +23,15 @@ function Intro() {
         <div className="row">
           <div className="col-lg-10">
             <div className="text">
-              <span className="sub-title mb-15 opacity-8">- Who We Are?</span>
+              <span className="sub-title mb-15 opacity-8">- who am I?</span>
               <div className="text-reval">
                 <h2 className="fz-50 text-u mb-30">
-                  <span className="text">We are a creative studio with focus</span>
-                  <span className="text">on set design, illustration and</span>
-                  <span className="text"> motion design.</span>
+                  <span className="text">a creative technologist</span>
+                  <span className="text">| Unreal Engine 5</span>
+                  <span className="text">| Blender 3D | Motion Design</span>
                 </h2>
               </div>
-              <p>We create brand identities, digital experiences, and print materials that communicate clearly achieve marketing goals, and look fantastic. Urban design draws together the many strands of place-making, environmental stewardship.</p>
+              <p>I am a passionate software developer with expertise in Unreal Engine 5 and Blender. In my past 5 years of experience in tech field I've worked with studios around the world, clients from all over the world. I've worked with BKG, USA; Rural Games, India; Redacted Works, Poland and so on. </p>
             </div>
           </div>
         </div>
@@ -41,9 +41,9 @@ function Intro() {
               <div className="col-md-4 sm-mb30">
                 <ul className="list rest">
                   <li className="fz-18 mb-15"><span className="mr-10">+</span> Web Development</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> UI & UX Design</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Front-End Applications</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Back-End Engineering</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Software Development</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Game Systems</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> AI & Automation</li>
                 </ul>
               </div>
               <div className="col-md-4 sm-mb30">
@@ -51,35 +51,35 @@ function Intro() {
                   <li className="fz-18 mb-15"><span className="mr-10">+</span> Game Development</li>
                   <li className="fz-18 mb-15"><span className="mr-10">+</span> 3D Modelling</li>
                   <li className="fz-18 mb-15"><span className="mr-10">+</span> 3D Environment Art</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> CGI for Films</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> CGI & VFX for Films</li>
                 </ul>
               </div>
               <div className="col-md-4">
                 <ul className="list rest">
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Branding Strategy</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Digital Experiences</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Social Media</li>
-                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Advertising</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Unreal Engine 5</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Blueprint & C++</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Metahuman Creation</li>
+                  <li className="fz-18 mb-15"><span className="mr-10">+</span> Animation & Motion Design</li>
                 </ul>
               </div>
             </div>
             <div className="row numbers mt-80">
               <div className="col-lg-4">
                 <div className="item md-mb50">
-                  <h3 className="stroke f-bold num pb-30 mb-30 bord-thin-bottom">30+</h3>
-                  <h6 className="fz-16">Projects Completed</h6>
+                  <h3 className="stroke f-bold num pb-30 mb-30 bord-thin-bottom">15+</h3>
+                  <h6 className="fz-16">Projects Served</h6>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="item md-mb50">
-                  <h3 className="stroke f-bold num pb-30 mb-30 bord-thin-bottom">20+</h3>
-                  <h6 className="fz-16">Clients Around the World</h6>
+                  <h3 className="stroke f-bold num pb-30 mb-30 bord-thin-bottom">5+</h3>
+                  <h6 className="fz-16">Years of experience</h6>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="item">
-                  <h3 className="stroke f-bold num pb-30 mb-30 bord-thin-bottom">7</h3>
-                  <h6 className="fz-16">Total Awards</h6>
+                  <h3 className="stroke f-bold num pb-30 mb-30 bord-thin-bottom">6</h3>
+                  <h6 className="fz-16">Total Certifications</h6>
                 </div>
               </div>
             </div>

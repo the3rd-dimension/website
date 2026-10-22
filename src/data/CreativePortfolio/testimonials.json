@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "quote": "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    "author": "Tyler Smith",
-    "client": "Envato Client"
+    "quote": "His greatest strength is something that can be rare in the IT industry: he simply gets his job done exactly on time. Every single task, regardless of its complexity, was delivered strictly by the deadline. There were no excuses, delays, or sudden disappearances.",
+    "author": "Bartosz Kotecki",
+    "client": "Web Development | 3D Artist | Programming"
   },
   {
     "id": 2,
-    "quote": "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    "author": "Tyler Smith",
-    "client": "Envato Client"
+    "quote": "My portfolio website was built with a modern design and seamless user experience in mind. Tamzid delivered beyond my expectations, creating a site that truly showcases my work. Price to quality ratio is excellent.",
+    "author": "Root Bone Films",
+    "client": "Portfolio Website"
   },
   {
     "id": 3,
-    "quote": "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    "author": "Tyler Smith",
-    "client": "Envato Client"
+    "quote": "Incredible topology work on the environment props. Materials look outstanding in gameplay.",
+    "author": "M. Affan Bin Adnan",
+    "client": "3D Environment Project | Unreal Engine 5 | Blender"
   },
   {
     "id": 4,
-    "quote": "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    "author": "Tyler Smith",
-    "client": "Envato Client"
+    "quote": "I had a great experience working with this developer on my Unreal Engine 5 game. I brought him on to help refine my game mechanics, specifically focusing on enemy AI and interactive door logic. He successfully implemented and debugged the systems, making the gameplay experience incredibly smooth. His understanding of UE5 is topnotch, and he communicates complex technical solutions very clearly.",
+    "author": "Director, Eclipse Games",
+    "client": "Contact Based | Unreal Engine 5 | Game Development"
   }
 ]

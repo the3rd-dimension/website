@@ -7,10 +7,13 @@ function BottomContent() {
         <div className="row justify-content-center">
           <div className="col-lg-7">
             <div className="text">
-              <h2 className="mb-50">The Solution</h2>
-              <h5 className="mb-30 fw-400">Global concrete manufacturers engaging with us to develop specific testing programms.</h5>
-              <p className="fz-18">Show your portfolio in a stylish and modern design. The template has a clean, professional code, the site is fully adaptive and unique. This is a template for those who appreciate minimalism and convenience. Embed videos, images, and a slider.</p>
+              <h2 className="mb-50">The Outcome</h2>
+              <h5 className="mb-30 fw-400">MMTPS got a mega update in version 3.4  with complete visual remap, new features, system reworks and bug fixes.</h5>
+              <p className="fz-18">New showcase environment, new mission level and story, swimming system preview, weapon scopes remastered with modularity, zooming system and more. The blueprint codes are now more commented and easy to understand. I'm still working on next updates alongside soriox to bring new features to this project for developers. </p>
             </div>
+            <a href="https://www.patreon.com/cw/Soriox" target="_blank" className="btn-curve btn-bord radius-30 mt-50">
+              <span><h5> Download from Patreon</h5></span>
+            </a>
           </div>
         </div>
       </div>

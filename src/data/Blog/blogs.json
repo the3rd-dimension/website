@@ -1,93 +1,93 @@
 [
   {
     "id": 1,
-    "title": "Definitive Guide to Make a Daily More Productive Working Flow.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b7.jpg",
+    "title": "Mythilo platoform coming to Android",
+    "category": "New project",
+    "image": "/assets/imgs/blog/MobileAppBanner.png",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "14",
+      "month": "october"
     },
-    "link": "/blog-details"
+    "link": "https://mythilo.io"
   },
   {
     "id": 2,
-    "title": "Utilizing mobile technology in the field.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b2.jpg",
+    "title": "Working on new Local AI workflows",
+    "category": "New Tools",
+    "image": "/assets/imgs/blog/AI_Image.jpg",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "02",
+      "month": "October"
     },
-    "link": "/blog-details"
+    "link": "/blog-local-ai"
   },
   {
     "id": 3,
-    "title": "Ways of Lying to Yourself About Your New Relationship.",
-    "category": "Inspiration",
-    "date": "7 August",
-    "link": "/blog-details"
+    "title": "Farmer Run trailer under development, release estimated in November",
+    "category": "Dev Log",
+    "date": "7 October",
+    "link": "/blog-farmer-run-trailer"
   },
   {
     "id": 4,
-    "title": "The Start-Up Ultimate Guide to Make Your WordPress Journal.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b5.jpg",
+    "title": "MMTPS 3.4 development collaboration deal signed",
+    "category": "New Project",
+    "image": "/assets/imgs/works/projects/mmtps/mmtps3_4.png",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "21",
+      "month": "September"
     },
-    "link": "/blog-details"
+    "link": "https://www.patreon.com/cw/Soriox"
   },
   {
     "id": 5,
-    "title": "The Small Change That Creates Massive Results In Your Life.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b4.jpg",
+    "title": "New game Farmer Run in development under Rural Games Studio.",
+    "category": "New Project",
+    "image": "/assets/imgs/blog/farmerRunMenu.png",
     "date": {
-      "day": "07",
+      "day": "27",
       "month": "August"
     },
-    "link": "/blog-details"
+    "link": "/blog-farmer-run"
   },
   {
     "id": 6,
-    "title": "When You Are Down And Out How Do You Get Up And Go Forward.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b6.jpg",
+    "title": "Rural Games learning session on UE5 blueprints",
+    "category": "Lectures",
+    "image": "/assets/imgs/blog/ue5_blueprints.png",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "10",
+      "month": "October"
     },
-    "link": "/blog-details"
+    "link": "/blog-rg-learning-session"
   },
   {
     "id": 7,
-    "title": "Facts about Business that you never knew.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b1.jpg",
+    "title": "The Nurse shipped in play store, now available for download.",
+    "category": "Project completion",
+    "image": "/assets/imgs/works/projects/the_nurse/Screenshot_1.png",
     "date": {
       "day": "07",
       "month": "August"
     },
-    "link": "/blog-details"
+    "link": "https://play.google.com/store/apps/details?id=com.mabastudios.thenurse&hl=en"
   },
   {
     "id": 8,
-    "title": "20 Up-and-comers to watch in the Design Industry.",
-    "category": "Inspiration",
+    "title": "Business Analyst portfolio website delivered to client, now live.",
+    "category": "Project completion",
     "date": "7 August",
-    "link": "/blog-details"
+    "link": "https://zareentasneem.netlify.app/"
   },
   {
     "id": 9,
-    "title": "How to master Marketing in 6 simple Steps.",
-    "category": "Inspiration",
-    "image": "/assets/imgs/blog/b3.jpg",
+    "title": "The nurse officially getting a remake in Unreal Engine 5.",
+    "category": "Game Development",
+    "image": "/assets/imgs/works/projects/the_nurse/Screenshot_7.png",
     "date": {
-      "day": "07",
-      "month": "August"
+      "day": "20",
+      "month": "July"
     },
-    "link": "/blog-details"
+    "link": "https://imgur.com/a/diabolus-development-p7nhlu4"
   }
 ]

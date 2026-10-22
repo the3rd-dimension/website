@@ -9,7 +9,7 @@ function Blog() {
         <div className="sec-head pb-20 bord-thin-bottom mb-80">
           <div className="d-flex align-items-center">
             <div>
-              <h3 className="f-bold text-u">Our Blog</h3>
+              <h3 className="f-bold text-u">Blogs</h3>
             </div>
             <div className="ml-auto">
               <div className="d-flex align-items-center">
